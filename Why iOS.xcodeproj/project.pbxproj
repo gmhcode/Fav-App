@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		90154BB421C1B20C001E85D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90154BB321C1B20C001E85D8 /* AppDelegate.swift */; };
-		90154BB621C1B20C001E85D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90154BB521C1B20C001E85D8 /* ViewController.swift */; };
 		90154BB921C1B20C001E85D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90154BB721C1B20C001E85D8 /* Main.storyboard */; };
 		90154BBB21C1B20D001E85D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90154BBA21C1B20D001E85D8 /* Assets.xcassets */; };
 		90154BBE21C1B20D001E85D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90154BBC21C1B20D001E85D8 /* LaunchScreen.storyboard */; };
+		90154BC621C1B23B001E85D8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90154BC521C1B23B001E85D8 /* Post.swift */; };
+		90154BC821C1B678001E85D8 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90154BC721C1B678001E85D8 /* PostController.swift */; };
+		90154BCB21C1C8D2001E85D8 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90154BCA21C1C8D2001E85D8 /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90154BB021C1B20C001E85D8 /* Why iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Why iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90154BB321C1B20C001E85D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90154BB521C1B20C001E85D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90154BB821C1B20C001E85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90154BBA21C1B20D001E85D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90154BBD21C1B20D001E85D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90154BBF21C1B20D001E85D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90154BC521C1B23B001E85D8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		90154BC721C1B678001E85D8 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		90154BCA21C1C8D2001E85D8 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,39 @@
 			isa = PBXGroup;
 			children = (
 				90154BB321C1B20C001E85D8 /* AppDelegate.swift */,
-				90154BB521C1B20C001E85D8 /* ViewController.swift */,
+				90154BC521C1B23B001E85D8 /* Post.swift */,
+				90154BCD21C1C8DE001E85D8 /* ViewController */,
+				90154BCC21C1C8D7001E85D8 /* Model Controller */,
+				90154BC921C1B87D001E85D8 /* Resources */,
+			);
+			path = "Why iOS";
+			sourceTree = "<group>";
+		};
+		90154BC921C1B87D001E85D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				90154BB721C1B20C001E85D8 /* Main.storyboard */,
 				90154BBA21C1B20D001E85D8 /* Assets.xcassets */,
 				90154BBC21C1B20D001E85D8 /* LaunchScreen.storyboard */,
 				90154BBF21C1B20D001E85D8 /* Info.plist */,
 			);
-			path = "Why iOS";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90154BCC21C1C8D7001E85D8 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				90154BC721C1B678001E85D8 /* PostController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		90154BCD21C1C8DE001E85D8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				90154BCA21C1C8D2001E85D8 /* PostTableViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90154BB621C1B20C001E85D8 /* ViewController.swift in Sources */,
+				90154BC621C1B23B001E85D8 /* Post.swift in Sources */,
+				90154BCB21C1C8D2001E85D8 /* PostTableViewController.swift in Sources */,
+				90154BC821C1B678001E85D8 /* PostController.swift in Sources */,
 				90154BB421C1B20C001E85D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57FTCZV5HS;
-				INFOPLIST_FILE = "Why iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Why iOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57FTCZV5HS;
-				INFOPLIST_FILE = "Why iOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Why iOS/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
